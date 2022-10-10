@@ -36,7 +36,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SettingsOverlayG020J \
     SettingsOverlayG020P \
-    SettingsOverlayG020Q \
+    SettingsOverlayG020Q 
 
 # Setup wizard overlay packages for ActiveEdge
 PRODUCT_PACKAGES += \

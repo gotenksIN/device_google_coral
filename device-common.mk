@@ -72,7 +72,7 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 # Set lmkd options
 PRODUCT_PRODUCT_PROPERTIES += \
 	ro.config.low_ram = false \
-	ro.lmk.log_stats = true \
+	ro.lmk.log_stats = true 
 
 # Modem logging file
 PRODUCT_COPY_FILES += \
@@ -112,7 +112,7 @@ PRODUCT_COPY_FILES += \
 
 # Set thermal warm reset
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.thermal_warmreset = true \
+    ro.thermal_warmreset = true 
 
 # Enable Incremental on the device via kernel module
 PRODUCT_PROPERTY_OVERRIDES += \

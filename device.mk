@@ -26,7 +26,7 @@ PRODUCT_SOONG_NAMESPACES += \
     device/google/coral \
     hardware/qcom/sm8150/display \
     hardware/qcom/sm8150/data/ipacfg-mgr \
-    hardware/qcom/sm8150/gps \
+    hardware/qcom/sm8150/gps 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true
@@ -223,7 +223,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
     frameworks/native/data/etc/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
-    frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
+    frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml 
 
 # Audio fluence, ns, aec property, voice and media volume steps
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -233,7 +233,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicecomm=true \
     persist.vendor.audio.fluence.voicerec=false \
     ro.config.vc_call_vol_steps=7 \
-    ro.config.media_vol_steps=25 \
+    ro.config.media_vol_steps=25 
 
 # Audio Features
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -252,7 +252,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.multi_voice_session.enable=true \
     vendor.audio.capture.enforce_legacy_copp_sr=true \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24 \
-    vendor.audio.offload.gapless.enabled=true \
+    vendor.audio.offload.gapless.enabled=true 
 
 # MaxxAudio effect and add rotation monitor
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -333,7 +333,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rcs.supported=1 \
     vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     ro.hardware.keystore_desede=true \
-    persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.radio.procedure_bytes=SKIP 
 
 # Enable reboot free DSDS
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -443,21 +443,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2 \
     debug.stagefright.ccodec=4 \
-    debug.stagefright.omx_default_rank=512 \
+    debug.stagefright.omx_default_rank=512 
 
 # Disable OMX
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.media.omx=0 \
+    vendor.media.omx=0 
 
 # Create input surface on the framework side
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.stagefright.c2inputsurface=-1 \
+    debug.stagefright.c2inputsurface=-1 
 
 # Transcoding related property.
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.transcoding.codec_max_operating_rate_720P=480 \
     debug.media.transcoding.codec_max_operating_rate_1080P=240 \
-    debug.media.transcoding.codec_max_operating_rate_4k=120 \
+    debug.media.transcoding.codec_max_operating_rate_4k=120 
 
 # Enable ECO service
 QC2_HAVE_ECO_SERVICE := true
@@ -516,7 +516,7 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-pixel-legacy \
     android.hardware.boot@1.2-impl-pixel-legacy.recovery \
-    android.hardware.boot@1.2-service \
+    android.hardware.boot@1.2-service 
 
 # Thermal HAL config
 PRODUCT_COPY_FILES += \
@@ -569,7 +569,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi_concurrency_cfg.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wifi_concurrency_cfg.txt \
-    $(LOCAL_PATH)/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH)/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini 
 
 LIB_NL := libnl_2
 PRODUCT_PACKAGES += $(LIB_NL)
@@ -777,7 +777,7 @@ PRODUCT_PACKAGES += \
 
 # Override heap growth limit due to high display density on device
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=256m \
+    dalvik.vm.heapgrowthlimit=256m 
 
 # Use 64-bit dex2oat for better dexopt time.
 PRODUCT_PROPERTY_OVERRIDES += \

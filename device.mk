@@ -79,6 +79,7 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_PRODUCT_VNDK_VERSION := current
 
 PRODUCT_PACKAGES += \
+    AOSPAFloralFrameworks \
     FloralFrameworks \
     FloralNfc \
     FloralSettings \
